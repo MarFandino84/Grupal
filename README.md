@@ -5,4 +5,4 @@ Naiara Cerrizuela
 Mariano Fandiño
 Camila Vazquez
 Santiago Cabaña
-
+Rodrigo Barria

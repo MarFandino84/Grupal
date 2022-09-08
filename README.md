@@ -1,6 +1,8 @@
 # Grupal
 Trabajo Grupal Nucba
-/pabloles
-/Santicaba
-/Naia86
-/Camivazd
+Pablo Lescano 
+Naiara Cerrizuela
+Mariano Fandiño
+Camila Vazquez
+Santiago Cabaña
+

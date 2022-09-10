@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(43, 40, 40);
+}
+ 
+/* El contenedor principal de la página. Es un flexbox con dirección flexible: fila. */
+.contenedor{
+    display: flex;
+    flex-direction: row;
+    padding-left: 30px;
+}
+
+/* El contenedor de las cartas. */
+.contenedor .container-cards{
+    display: flex;
+    background-color: rgb(25, 26, 26);
+    width: 80px;
+   /* height: 160px;*/
+    gap: 2em;
+    border-radius: 20px;
+
+}
+
+
+    
+/* Se Establecio el color de fondo y bordes de los divs dentro del contenedor. */
+.contenedor div {
+    background-color: rgb(25, 26, 26);
+    border-radius: 20px;
+    height: 170px;
+    
+    
+
+   
+}
+
+/* Hacer que la clase `.pizza` sea una caja flexible con una dirección de columna. */
+
+.contenedor div .pizza {
+    display:flex;
+    flex-direction: column;
+}
+
+/*El estilo de la imagen. */
+.img{
+    padding: 12px;
+    width: 200px;
+    height: 100px;
+    border-radius: 10px;
+}
+
+/* El estilo del texto que dice "Pizza" */
+h5{
+    color: white;
+    padding-left: 10px;
+
+}
+
+
+h4 {
+    display: flex;
+    padding-left: 5px ;
+    background: linear-gradient(to right, #FFA100, #FF005C);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color:transparent;
+    font-weight: 1000;
+    font-size: 15px;
+    padding-top: 5px;
+
+}
+
+
+.butonn-precio{
+    display:flex;
+    justify-content: space-between;
+    margin-right: 20px;
+}
+
+/* El estilo del boton */
+button {
+    display:flex;
+    margin-left: 20px;
+    width: 72px;
+    color: white;
+    font-size: 12px;
+    font-weight: 750;
+    height: 22px;
+    background: linear-gradient(to right, #FFA100, #FF005C);
+    border-radius: 20px;
+    border: none;
+    text-align: center;
+    align-items: center;
+    justify-items: center;
+    flex-direction: column;
+    padding-top: 4px;
+   
+    
+    
+}
+
+
+h6{
+    color: grey;
+    padding-left: 10px;
+}
+
+
+/* Hacer que las tarjetas se envuelvan cuando la pantalla es inferior a 900 px. */
+    @media screen and (max-width: 900px )  {
+
+    .contenedor{
+        flex-wrap: wrap;
+    }
+
+    .container-cards {
+        display:flex;
+        flex-wrap:wrap;
+        flex-direction: column;
+    }
+    
+}
+
+
+@media screen and (min-width: 901px) and (max-width: 1024px) {
+
+    .contenedor{
+        flex-wrap: wrap;
+    }
+
+    .container-cards {
+        display:flex;
+        flex-wrap:wrap;
+        flex-direction: column;
+    }
+
+}
